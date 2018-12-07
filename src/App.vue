@@ -1,35 +1,40 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <view-box id="app">
+        <router-view></router-view>
+        <tabbar></tabbar>
+    </view-box>
 </template>
 
 <script>
-import '//at.alicdn.com/t/font_946044_mwcpatwhpih.js'
-import HelloWorld from './components/HelloWorld.vue'
+//import '//at.alicdn.com/t/font_946044_mwcpatwhpih.js'
+import Tabbar from '@/components/tabbar.vue'
+import {Viewbox} from 'vux'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Tabbar, Viewbox
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-  *{
-
-  }
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        background-color: #F7F7F7;
+        min-height: 100vh;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
 </style>
 
 <style lang="less">
-@import '~vux/src/styles/reset.less';
+    @import '~vux/src/styles/reset.less';
 </style>
