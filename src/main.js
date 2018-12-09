@@ -4,6 +4,8 @@ import store from './store'
 import i18n from './i18n'
 import 'lib-flexible'
 import router from './router'
+import * as con from './constant'
+Vue.prototype.con = con
 
 Vue.config.productionTip = false
 

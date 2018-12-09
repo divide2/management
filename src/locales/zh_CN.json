@@ -1,7 +1,22 @@
 {
-  "message": "你好 i18n !!",
   "titles": {
     "home": "首页",
-    "mine": "我的"
+    "mine": "我的",
+    "signIn": "登录",
+    "signUp": "注册"
+  },
+  "placeholder": {
+    "inputPhone": "请输入手机号码",
+    "inputPassword": "请输入密码"
+  },
+  "tips":{
+    "hasAccount": "已有账号？",
+    "signInNow": "立即登录",
+    "noAccount": "没有账号？",
+    "signUpNow": "立即注册"
+  },
+  "btn": {
+    "signIn": "登录",
+    "signUp": "注册"
   }
 }
